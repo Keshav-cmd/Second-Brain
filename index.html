@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD: Your Hidden Superpower</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8, #f472b6, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f0a1f 0%, #1e1b4b 50%, #2e1065 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.3);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .dark-card {
+            background: linear-gradient(145deg, #1f2937, #111827);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+        .glow {
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-950">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-3xl">🧠</span>
+                <span class="font-bold text-xl text-white">ADHD Superpowers</span>
+            </div>
+            <div class="hidden md:flex gap-6 text-gray-400">
+                <a href="#superpowers" class="hover:text-purple-400 transition">Superpowers</a>
+                <a href="#research" class="hover:text-purple-400 transition">Research</a>
+                <a href="#harness" class="hover:text-purple-400 transition">Harness It</a>
+                <a href="#tips" class="hover:text-purple-400 transition">Tips</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient min-h-screen flex items-center justify-center text-white pt-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="float-animation text-8xl mb-6">⚡</div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
+                ADHD is Your<br>
+                <span class="gradient-text">Hidden Superpower</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-purple-300 max-w-3xl mx-auto mb-10">
+                Discover how your unique brain wiring gives you extraordinary gifts waiting to be unleashed.
+            </p>
+            <a href="#superpowers" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-purple-500/25 transition transform hover:scale-105">
+                Discover Your Powers →
+            </a>
+            <div class="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-pink-400">366M+</div>
+                    <div class="text-purple-400 text-sm">People with ADHD Worldwide</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-orange-400">35%</div>
+                    <div class="text-purple-400 text-sm">Entrepreneurs have ADHD</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-yellow-400">2x</div>
+                    <div class="text-purple-400 text-sm">More likely to start a business</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Reframe Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                        Embrace Your <span class="text-purple-400">Brilliant</span> Mind
+                    </h2>
+                    <p class="text-lg text-gray-400 mb-6">
+                        Groundbreaking research is revealing an exciting truth about ADHD — your unique brain wiring comes with remarkable gifts and abilities.
+                    </p>
+                    <p class="text-lg text-gray-400 mb-6">
+                        Dr. Dale Archer, author of "The ADHD Advantage," notes that <strong class="text-gray-200">many of the world's most successful entrepreneurs, artists, and innovators</strong> have ADHD. The same brain differences that create challenges in traditional settings become superpowers in the right environment.
+                    </p>
+                    <div class="bg-purple-900/30 border-l-4 border-purple-500 p-6 rounded-r-lg">
+                        <p class="text-purple-200 italic">
+                            "ADHD is not about having a deficit of attention. It's about having an abundance of attention that's hard to regulate."
+                        </p>
+                        <p class="text-purple-400 font-medium mt-2">— Dr. Edward Hallowell, Psychiatrist</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="bg-gradient-to-r from-purple-900/50 to-indigo-900/50 p-6 rounded-2xl text-center border border-purple-700/30">
+                        <div class="text-3xl mb-3">🎯</div>
+                        <h3 class="font-semibold text-purple-300 mb-2">Hyperfocus Ability</h3>
+                        <p class="text-purple-400 text-sm">Deep concentration on what matters to you</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-pink-900/50 to-rose-900/50 p-6 rounded-2xl text-center border border-pink-700/30">
+                        <div class="text-3xl mb-3">🚀</div>
+                        <h3 class="font-semibold text-pink-300 mb-2">Action-Oriented</h3>
+                        <p class="text-pink-400 text-sm">Quick to take initiative and make things happen</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-amber-900/50 to-orange-900/50 p-6 rounded-2xl text-center border border-amber-700/30">
+                        <div class="text-3xl mb-3">👁️</div>
+                        <h3 class="font-semibold text-amber-300 mb-2">Heightened Awareness</h3>
+                        <p class="text-amber-400 text-sm">Notices details and patterns others miss</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Superpowers Section -->
+    <section id="superpowers" class="py-20 bg-gray-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                    The 6 ADHD <span class="gradient-text">Superpowers</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Research reveals these extraordinary abilities that come with the ADHD brain.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Superpower 1 -->
+                <div class="dark-card p-8 rounded-3xl card-hover transition-all duration-300 glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        🎯
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Hyperfocus</h3>
+                    <p class="text-gray-400 mb-4">
+                        When passionate about something, ADHD individuals can enter states of intense concentration that neurotypical people rarely achieve.
+                    </p>
+                    <div class="bg-purple-900/40 p-4 rounded-xl border border-purple-700/30">
+                        <p class="text-purple-300 text-sm">
+                            <strong>Research:</strong> A 2020 study in <em>Frontiers in Psychiatry</em> found ADHD individuals show enhanced task performance during hyperfocus states.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Superpower 2 -->
+                <div class="dark-card p-8 rounded-3xl card-hover transition-all duration-300 glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        💡
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Creative Thinking</h3>
+                    <p class="text-gray-400 mb-4">
+                        The ADHD brain makes unique connections others miss, leading to innovative solutions and original ideas.
+                    </p>
+                    <div class="bg-pink-900/40 p-4 rounded-xl border border-pink-700/30">
+                        <p class="text-pink-300 text-sm">
+                            <strong>Research:</strong> White & Shah (2011) found ADHD adults outperformed controls on divergent thinking tasks — the core of creativity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Superpower 3 -->
+                <div class="dark-card p-8 rounded-3xl card-hover transition-all duration-300 glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        ⚡
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Boundless Energy</h3>
+                    <p class="text-gray-400 mb-4">
+                        That restlessness transforms into incredible stamina and drive when channeled into meaningful pursuits.
+                    </p>
+                    <div class="bg-orange-900/40 p-4 rounded-xl border border-orange-700/30">
+                        <p class="text-orange-300 text-sm">
+                            <strong>Research:</strong> Many Olympic athletes have ADHD — Michael Phelps, Simone Biles, and others credit it for their drive.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Superpower 4 -->
+                <div class="dark-card p-8 rounded-3xl card-hover transition-all duration-300 glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        🔥
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Crisis Performance</h3>
+                    <p class="text-gray-400 mb-4">
+                        ADHD individuals often thrive under pressure, staying calm and focused when others panic.
+                    </p>
+                    <div class="bg-green-900/40 p-4 rounded-xl border border-green-700/30">
+                        <p class="text-green-300 text-sm">
+                            <strong>Research:</strong> High-pressure situations trigger dopamine release, which ADHD brains crave for optimal function.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Superpower 5 -->
+                <div class="dark-card p-8 rounded-3xl card-hover transition-all duration-300 glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        💪
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Resilience</h3>
+                    <p class="text-gray-400 mb-4">
+                        Years of navigating challenges builds incredible mental toughness and adaptability.
+                    </p>
+                    <div class="bg-blue-900/40 p-4 rounded-xl border border-blue-700/30">
+                        <p class="text-blue-300 text-sm">
+                            <strong>Research:</strong> Sedgwick et al. (2019) identified resilience as a key strength in ADHD individuals who thrive.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Superpower 6 -->
+                <div class="dark-card p-8 rounded-3xl card-hover transition-all duration-300 glow">
+                    <div class="w-16 h-16 bg-gradient-to-br from-violet-500 to-purple-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        🌟
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pattern Recognition</h3>
+                    <p class="text-gray-400 mb-4">
+                        The ability to see the big picture and connect dots others miss leads to breakthrough insights.
+                    </p>
+                    <div class="bg-violet-900/40 p-4 rounded-xl border border-violet-700/30">
+                        <p class="text-violet-300 text-sm">
+                            <strong>Research:</strong> Studies show ADHD individuals excel at identifying patterns in complex, novel situations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                    What <span class="text-purple-400">Science</span> Says
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Peer-reviewed research is changing how we understand the ADHD brain.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">📊</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-purple-400 mb-2">The Entrepreneur Study</h3>
+                            <p class="text-gray-300 mb-4">
+                                Research published in the <em>Journal of Business Venturing</em> (2018) found that entrepreneurs with ADHD showed higher levels of entrepreneurial orientation and were more likely to start multiple businesses.
+                            </p>
+                            <p class="text-gray-500 text-sm">Wiklund et al., 2018</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🧬</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-pink-400 mb-2">The Creativity Connection</h3>
+                            <p class="text-gray-300 mb-4">
+                                A landmark study found adults with ADHD scored significantly higher on measures of original creative thinking compared to non-ADHD controls.
+                            </p>
+                            <p class="text-gray-500 text-sm">White & Shah, Journal of Creative Behavior, 2011</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🏃</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-green-400 mb-2">The Hunter Hypothesis</h3>
+                            <p class="text-gray-300 mb-4">
+                                Evolutionary research suggests ADHD traits were advantageous for our hunter ancestors — quick decision-making, high energy, and environmental awareness were survival traits.
+                            </p>
+                            <p class="text-gray-500 text-sm">Thom Hartmann, 1993; Williams & Taylor, 2006</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="text-4xl">🎨</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-orange-400 mb-2">Positive ADHD Traits</h3>
+                            <p class="text-gray-300 mb-4">
+                                A systematic review identified cognitive dynamism, courage, energy, humanity, resilience, and transcendence as positive traits associated with ADHD.
+                            </p>
+                            <p class="text-gray-500 text-sm">Sedgwick et al., ADHD Attention Deficit Hyperactivity Disorders, 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Famous People Section -->
+    <section class="py-20 bg-gray-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                    ADHD <span class="gradient-text">Superheroes</span>
+                </h2>
+                <p class="text-xl text-gray-400">
+                    These world-changers harnessed their ADHD as a superpower.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center p-6 bg-gradient-to-br from-indigo-900/50 to-purple-900/50 rounded-2xl border border-indigo-700/30">
+                    <div class="text-5xl mb-4">🏊</div>
+                    <h3 class="font-bold text-white">Michael Phelps</h3>
+                    <p class="text-gray-400 text-sm">28 Olympic Medals</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-pink-900/50 to-rose-900/50 rounded-2xl border border-pink-700/30">
+                    <div class="text-5xl mb-4">🤸</div>
+                    <h3 class="font-bold text-white">Simone Biles</h3>
+                    <p class="text-gray-400 text-sm">Greatest Gymnast Ever</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-orange-900/50 to-amber-900/50 rounded-2xl border border-orange-700/30">
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="font-bold text-white">Richard Branson</h3>
+                    <p class="text-gray-400 text-sm">Founder, Virgin Group</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-green-900/50 to-emerald-900/50 rounded-2xl border border-green-700/30">
+                    <div class="text-5xl mb-4">💻</div>
+                    <h3 class="font-bold text-white">Bill Gates</h3>
+                    <p class="text-gray-400 text-sm">Microsoft Founder</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-blue-900/50 to-cyan-900/50 rounded-2xl border border-blue-700/30">
+                    <div class="text-5xl mb-4">🎬</div>
+                    <h3 class="font-bold text-white">Steven Spielberg</h3>
+                    <p class="text-gray-400 text-sm">Legendary Director</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-violet-900/50 to-purple-900/50 rounded-2xl border border-violet-700/30">
+                    <div class="text-5xl mb-4">💡</div>
+                    <h3 class="font-bold text-white">Albert Einstein</h3>
+                    <p class="text-gray-400 text-sm">Physicist, Genius</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-rose-900/50 to-pink-900/50 rounded-2xl border border-rose-700/30">
+                    <div class="text-5xl mb-4">🎤</div>
+                    <h3 class="font-bold text-white">Justin Timberlake</h3>
+                    <p class="text-gray-400 text-sm">Multi-talented Artist</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-amber-900/50 to-yellow-900/50 rounded-2xl border border-amber-700/30">
+                    <div class="text-5xl mb-4">🎭</div>
+                    <h3 class="font-bold text-white">Jim Carrey</h3>
+                    <p class="text-gray-400 text-sm">Comedy Legend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Harness Section -->
+    <section id="harness" class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                    How to <span class="gradient-text">Harness</span> Your Superpowers
+                </h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Practical strategies backed by research to unlock your full potential.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Strategy 1 -->
+                <div class="dark-card p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-5xl text-white shrink-0">
+                        1
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Design Your Environment</h3>
+                        <p class="text-gray-400 mb-4">
+                            Remove distractions and create spaces that trigger focus. Use noise-canceling headphones, declutter your workspace, and use apps that block social media during work hours.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-700/50">Minimize clutter</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-700/50">Use website blockers</span>
+                            <span class="bg-indigo-900/50 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-700/50">Create focus zones</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 2 -->
+                <div class="dark-card p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center text-5xl text-white shrink-0">
+                        2
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Follow Your Passion</h3>
+                        <p class="text-gray-400 mb-4">
+                            ADHD brains are interest-driven, not importance-driven. Structure your career around what genuinely excites you, and watch your hyperfocus become your greatest asset.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-pink-900/50 text-pink-300 px-3 py-1 rounded-full text-sm border border-pink-700/50">Identify your interests</span>
+                            <span class="bg-pink-900/50 text-pink-300 px-3 py-1 rounded-full text-sm border border-pink-700/50">Create passion projects</span>
+                            <span class="bg-pink-900/50 text-pink-300 px-3 py-1 rounded-full text-sm border border-pink-700/50">Gamify boring tasks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 3 -->
+                <div class="dark-card p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center text-5xl text-white shrink-0">
+                        3
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Use External Systems</h3>
+                        <p class="text-gray-400 mb-4">
+                            Don't rely on memory — externalize everything. Use calendars, reminders, timers, and visual cues. The Pomodoro Technique (25 min work, 5 min break) works wonders for ADHD brains.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-orange-900/50 text-orange-300 px-3 py-1 rounded-full text-sm border border-orange-700/50">Digital calendars</span>
+                            <span class="bg-orange-900/50 text-orange-300 px-3 py-1 rounded-full text-sm border border-orange-700/50">Pomodoro timer</span>
+                            <span class="bg-orange-900/50 text-orange-300 px-3 py-1 rounded-full text-sm border border-orange-700/50">Visual to-do lists</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 4 -->
+                <div class="dark-card p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center text-5xl text-white shrink-0">
+                        4
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Move Your Body</h3>
+                        <p class="text-gray-400 mb-4">
+                            Exercise is medicine for the ADHD brain. It increases dopamine and norepinephrine, improving focus naturally. Even a 20-minute walk can dramatically enhance concentration.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm border border-green-700/50">Daily exercise</span>
+                            <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm border border-green-700/50">Walking meetings</span>
+                            <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full text-sm border border-green-700/50">Fidget tools</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 5 -->
+                <div class="dark-card p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center text-5xl text-white shrink-0">
+                        5
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Build Your Team</h3>
+                        <p class="text-gray-400 mb-4">
+                            Partner with people who complement your skills. If organization isn't your strength, find a detail-oriented partner. Your big-picture thinking and energy are invaluable assets.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/50">Delegate weaknesses</span>
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/50">Find accountability partners</span>
+                            <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/50">Join ADHD communities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Tips Section -->
+    <section id="tips" class="py-20 bg-gray-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                    Quick <span class="gradient-text">Power-Ups</span>
+                </h2>
+                <p class="text-xl text-gray-400">
+                    Daily habits to keep your superpowers charged.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-indigo-600 to-purple-700 p-6 rounded-2xl text-white shadow-lg shadow-indigo-500/20">
+                    <div class="text-3xl mb-4">😴</div>
+                    <h3 class="font-bold mb-2">Prioritize Sleep</h3>
+                    <p class="text-indigo-100 text-sm">7-9 hours. Sleep deprivation worsens every ADHD symptom.</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-600 to-rose-700 p-6 rounded-2xl text-white shadow-lg shadow-pink-500/20">
+                    <div class="text-3xl mb-4">🍎</div>
+                    <h3 class="font-bold mb-2">Eat Protein</h3>
+                    <p class="text-pink-100 text-sm">Protein-rich breakfasts improve focus all day.</p>
+                </div>
+                <div class="bg-gradient-to-br from-orange-600 to-amber-700 p-6 rounded-2xl text-white shadow-lg shadow-orange-500/20">
+                    <div class="text-3xl mb-4">⏰</div>
+                    <h3 class="font-bold mb-2">Time Your Tasks</h3>
+                    <p class="text-orange-100 text-sm">Deadlines and timers create the urgency ADHD needs.</p>
+                </div>
+                <div class="bg-gradient-to-br from-green-600 to-emerald-700 p-6 rounded-2xl text-white shadow-lg shadow-green-500/20">
+                    <div class="text-3xl mb-4">🎵</div>
+                    <h3 class="font-bold mb-2">Use Music</h3>
+                    <p class="text-green-100 text-sm">Lo-fi, classical, or nature sounds can boost focus.</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-600 to-cyan-700 p-6 rounded-2xl text-white shadow-lg shadow-blue-500/20">
+                    <div class="text-3xl mb-4">📝</div>
+                    <h3 class="font-bold mb-2">Brain Dump</h3>
+                    <p class="text-blue-100 text-sm">Write down every thought to clear mental clutter.</p>
+                </div>
+                <div class="bg-gradient-to-br from-violet-600 to-purple-700 p-6 rounded-2xl text-white shadow-lg shadow-violet-500/20">
+                    <div class="text-3xl mb-4">🧘</div>
+                    <h3 class="font-bold mb-2">Practice Mindfulness</h3>
+                    <p class="text-violet-100 text-sm">Even 5 minutes of meditation improves focus.</p>
+                </div>
+                <div class="bg-gradient-to-br from-rose-600 to-pink-700 p-6 rounded-2xl text-white shadow-lg shadow-rose-500/20">
+                    <div class="text-3xl mb-4">🎮</div>
+                    <h3 class="font-bold mb-2">Gamify Everything</h3>
+                    <p class="text-rose-100 text-sm">Turn boring tasks into games with points and rewards.</p>
+                </div>
+                <div class="bg-gradient-to-br from-amber-600 to-orange-700 p-6 rounded-2xl text-white shadow-lg shadow-amber-500/20">
+                    <div class="text-3xl mb-4">🤝</div>
+                    <h3 class="font-bold mb-2">Body Doubling</h3>
+                    <p class="text-amber-100 text-sm">Work alongside someone (even virtually) for accountability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 hero-gradient text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="text-6xl mb-6 pulse-animation">🦸</div>
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                Your ADHD Brain is<br>Brilliantly Wired.
+            </h2>
+            <p class="text-xl text-purple-300 mb-10 max-w-2xl mx-auto">
+                The world needs your creativity, your energy, your unique perspective. Embrace your extraordinary mind and design a life that celebrates your brain's amazing capabilities.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#superpowers" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:shadow-purple-500/25 transition transform hover:scale-105">
+                    Explore Your Powers
+                </a>
+                <a href="#harness" class="border-2 border-purple-400 text-purple-300 px-8 py-4 rounded-full font-semibold text-lg hover:bg-purple-500 hover:text-white hover:border-purple-500 transition">
+                    Learn to Harness Them
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <span class="text-3xl">🧠</span>
+                    <span class="font-bold text-xl text-white">ADHD Superpowers</span>
+                </div>
+                <p class="mb-6 max-w-xl mx-auto">
+                    This blog is for educational purposes. If you suspect you have ADHD, please consult a qualified healthcare professional for proper diagnosis and support.
+                </p>
+                <div class="border-t border-gray-800 pt-6">
+                    <p class="text-sm text-gray-500">
+                        <strong class="text-gray-400">Key References:</strong><br>
+                        White & Shah (2011) • Sedgwick et al. (2019) • Wiklund et al. (2018) • Dr. Edward Hallowell • Dr. Dale Archer
+                    </p>
+                </div>
+                <p class="mt-6 text-gray-600">
+                    Made with 💜 for the ADHD community
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scrollTop" class="fixed bottom-8 right-8 bg-purple-600 text-white w-12 h-12 rounded-full shadow-lg shadow-purple-500/30 flex items-center justify-center opacity-0 transition-opacity hover:bg-purple-500" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </button>
+
+    <script>
+        // Scroll to top button visibility
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                btn.style.opacity = '1';
+            } else {
+                btn.style.opacity = '0';
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Make header always visible
+        document.querySelector('header').style.opacity = '1';
+        document.querySelector('header').style.transform = 'none';
+    </script>
+</body>
+</html>
+
