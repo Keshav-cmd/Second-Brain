@@ -102,7 +102,7 @@ python -m http.server 8000
 npx serve
 ```
 
-Then visit `http://localhost:8000` in your browser.
+Then visit `https://keshav-cmd.github.io/Second-Brain/` in your browser.
 
 ---
 
